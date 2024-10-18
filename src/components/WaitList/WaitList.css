@@ -1,0 +1,123 @@
+.img-viajes-recomendados {
+    background-image: url('../../../public/app.jpg');
+    background-size: cover;
+    background-position: start;
+    height: 30cap;
+    color: aliceblue;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw; 
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+  }
+  
+  .nav-list li {
+    display: inline;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  .nav-list a:hover {
+    text-decoration: underline;
+  }
+  .Home {
+    text-align: center;
+    background-color:rgb(232, 201, 161);
+    min-height: 100vh;
+  }
+  
+  .Home-header {
+    background-color: #0e2a63;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    align-items: center;
+    justify-content:end;
+  }
+  .acceder-button{
+    background-color:darkorange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ingresar-button{
+    background-color:darkorange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .viajes-recomendados-footer {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: chocolate;
+    width: 100%;
+    min-height: 100px;
+    flex-wrap: wrap;
+}
+
+
+  footer{
+    height: 500px !important;
+  }
+  
+  .viajes-recomendados-footer{
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+  }
+  
+  .lista-footer {
+    font-size: small;
+    margin-inline: 10px;
+    list-style-type: none;
+    margin: 0;
+    text-align: start;
+  }
+  .viajes-recomendados-footer-icons{
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .viajes-recomendados-footer{
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    background-color:chocolate ;
+  }
+  
+  .viajes-recomendados-footer-text h6{
+    margin: 0;
+    padding-left: 15px;
+  }

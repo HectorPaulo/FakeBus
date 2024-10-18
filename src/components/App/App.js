@@ -4,6 +4,7 @@ import Home from '../Home/Home';
 import Signup from '../Signup/Signup';
 import Login from '../Login/Login';
 import BuscarViaje from '../BuscarViaje/BuscarViaje';
+import WaitList from '../WaitList/WaitList';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/BuscarViaje" element={<BuscarViaje />} />
+        <Route path="/WaitList" element={<WaitList />} />
       </Routes>
     </Router>
   );
