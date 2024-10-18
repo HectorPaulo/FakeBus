@@ -1,0 +1,35 @@
+.text-horarios-precios {
+    text-align: start;
+    margin-left: 50px;
+}
+
+.precio-ida {
+    background-color: rgb(202, 202, 202);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.card-destino {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    margin: 20px 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin: 2% 15%;
+}
+
+.card-destino img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.card-destino-text {
+    display: flex;
+    flex-direction: column;
+}

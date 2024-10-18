@@ -8,6 +8,7 @@ import WaitList from '../WaitList/WaitList';
 import Terminales from '../Terminales/Terminales';
 import Mensaje from '../Mensaje/Mensaje';
 import InformacionViaje from '../InformacionViaje/InformacionViaje'
+import HorariosPrecios from '../InformacionViaje/HorariosPrecios';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/Terminales" element={<Terminales />} />
         <Route path="/Mensaje" element={<Mensaje />} />
         <Route path="/InformacionViaje" element={<InformacionViaje />} />
+        <Route path="/HorariosPrecios" element={<HorariosPrecios />} />
       </Routes>
     </Router>
   );
