@@ -79,6 +79,9 @@
     flex-wrap: wrap;
 }
 
+.text-app{
+    color: black;
+}
 
   footer{
     height: 500px !important;
