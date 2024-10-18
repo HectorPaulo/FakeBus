@@ -56,6 +56,7 @@
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  padding-top: 20px;
 }
 
 .ingresar-button{
@@ -88,4 +89,61 @@
   align-items: center;
   justify-content: center;
   text-align: center; 
+}
+
+.card-destino {
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  height: 18cap;
+  width: 49cap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-left: 20px;
+  margin: 20px auto;
+}
+
+.card-destino-text {
+  padding: 0 0 0 20px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-destino-text p {
+  margin: 0 20px 10px 0;
+  text-align: justify;
+}
+
+.lista-footer {
+  font-size: small;
+  margin-inline: 10px;
+  list-style-type: none;
+  margin: 0;
+  text-align: start;
+}
+.viajes-recomendados-footer-icons{
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.viajes-recomendados-footer{
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  background-color:chocolate ;
+  height: 15cap;
+}
+
+.viajes-recomendados-footer-text h6{
+  margin: 0;
+  padding-left: 15px;
 }
