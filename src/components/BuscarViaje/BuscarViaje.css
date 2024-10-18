@@ -1,0 +1,202 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.img-buscar-viajes {
+  color: white;
+  height: auto;
+  width: 250px;
+  padding: 20px;
+}
+
+.img-buscar-viajes2{
+  color: white;
+  height: auto;
+  width: 250px;
+  padding: 20px;
+}
+
+.contenedor-img-buscar-viajes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.p-buscar-viajes {
+  font-size: 0.7em;
+  color: grey;
+  text-decoration: underline;
+}
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-right: 20px ;
+}
+
+.nav-list li {
+  display: inline;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+.BuscarViaje {
+  text-align: center;
+  background-color:rgb(232, 201, 161);
+  min-height: 100vh;
+}
+
+.BuscarViaje-header {
+  background-color: #0e2a63;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  align-items: center;
+  justify-content:end;
+}
+
+.acceder-button, .ingresar-button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.ingresar-button:hover, .acceder-button:hover {
+  background-color: #ff4c3b;
+}
+
+.viajes-recomendados-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.viajes-recomendados-footer {
+  background-color: chocolate;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.viajes-recomendados-footer-icons{
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.viajes-recomendados-footer-icons i {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.viajes-recomendados-footer-text {
+  margin: 20px 0;
+}
+
+.viajes-recomendados-footer-text h6 {
+  margin: 0 0 10px;
+  padding-left: 15px;
+}
+
+.lista-footer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: small;
+  margin-inline: 10px;
+  text-align: start;
+}
+
+.lista-footer li {
+  margin: 5px 0;
+}
+
+.img-viajes-recomendados-presentacion {
+  background-color: #333;
+  color: white;
+margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-viajes-recomendados-presentacion h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.img-viajes-recomendados-presentacion p {
+  margin: 10px 0 0;
+  font-size: 1.2em;
+}
+
+form {
+  margin: 20px 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 50px 20px 30px 0px;
+
+}
+
+form label {
+  padding-left : 20px;
+  display: block;
+  font-size: 12px;
+}
+
+form input[type="select"],
+form input[type="select"],
+form input[type="datetime-local"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.buscar-button {
+  background-color:olivedrab;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 50px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buscar-button:hover {
+  background-color: #165f1b;
+}
+
+.formulario{
+  background-color: #d19d61;
+}

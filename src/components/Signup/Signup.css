@@ -1,0 +1,198 @@
+.wrapper-register {
+    --input-focus: #2d8cf0;
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: #fff;
+    --bg-color-alt: #666;
+    --main-color: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+}
+
+/* switch card */
+.switch-register {
+    transform: translateY(-200px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 50px;
+    height: 20px;
+}
+
+.card-side-register::before {
+    position: absolute;
+    content: 'Ingresar';
+    left: -90px;
+    top: 0;
+    width: 100px;
+    text-decoration: none; /* Cambiado a none */
+    color: var(--font-color);
+    font-weight: 600;
+}
+
+.card-side-register::after {
+    position: absolute;
+    content: 'Acceder';
+    left: 50px;
+    top: 0;
+    width: 100px;
+    text-decoration: underline; /* Cambiado a underline */
+    color: var(--font-color);
+    font-weight: 600;
+}
+
+.toggle-register {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider-register {
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--input-focus); /* Cambiado a var(--input-focus) */
+    transition: 0.3s;
+}
+
+.slider-register:before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    left: 30px; /* Cambiado a 30px */
+    bottom: 2px;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 0 var(--main-color);
+    transition: 0.3s;
+}
+
+.toggle-register:checked + .slider-register {
+    background-color: var(--input-focus);
+}
+
+.toggle-register:checked + .slider-register:after {
+    transform: translateX(30px);
+}
+
+.toggle-register:checked ~ .card-side-register:before {
+    text-decoration: none;
+}
+
+.toggle-register:checked ~ .card-side-register:after {
+    text-decoration: underline;
+}
+
+/* card */
+
+.flip-card__inner-register {
+    width: 300px;
+    height: 350px;
+    position: relative;
+    background-color: transparent;
+    perspective: 1000px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg); /* Añadido para rotar por defecto */
+}
+
+.toggle-register:checked ~ .flip-card__inner-register {
+    transform: rotateY(180deg);
+}
+
+.toggle-register:checked ~ .flip-card__front-register {
+    box-shadow: none;
+}
+
+.flip-card__front-register, .flip-card__back-register {
+    padding: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: lightgrey;
+    gap: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+}
+
+.flip-card__back-register {
+    width: 100%;
+    transform: rotateY(180deg);
+}
+
+.flip-card__form-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.title-register {
+    margin: 20px 0 20px 0;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.flip-card__input-register {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+}
+
+.flip-card__input-register::placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+}
+
+.flip-card__input-register:focus {
+    border: 2px solid var(--input-focus);
+}
+
+.flip-card__btn-register:active, .button-confirm-register:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+}
+
+.flip-card__btn-register {
+    margin: 20px 0 20px 0;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+}
