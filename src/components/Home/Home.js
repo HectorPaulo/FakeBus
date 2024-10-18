@@ -24,8 +24,8 @@ function Home() {
           </header>
         </>
       )}
-      <div className="viajes-recomendados-body">
-        <div className="img-viajes-recomendados">
+      <div>
+        <div class="img-viajes-recomendados">
           <h1>Viajes recomendados</h1>
         </div>
         <div className="card-destino">

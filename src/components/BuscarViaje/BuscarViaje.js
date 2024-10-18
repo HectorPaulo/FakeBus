@@ -17,45 +17,45 @@ function BuscarViaje() {
               </ul>
             </nav>
           </header>
+          <div className="img-viajes-recomendados-presentacion">
+            <h1>Fake Bus</h1>
+            <p>Lo mejor en viajes</p>
+          </div>
           <div className="viajes-recomendados-body">
-            <div className="img-viajes-recomendados-presentacion">
-              <h1>Fake Bus</h1>
-              <p>Lo mejor en viajes</p>
+            <div className="formulario">
+              <form>
+                  <div>
+                      <label htmlFor="origen">Origen:</label>
+                      <select id="origen" name="origen">
+                          <option value="ciudad1">Oaxaca</option>
+                          <option value="ciudad2">Puebla</option>
+                          <option value="ciudad3">Chiapas</option>
+                      </select>
+                  </div>
+                  <div>
+                      <label htmlFor="destino">Destino:</label>
+                      <select id="destino" name="destino">
+                          <option value="ciudad1">Ciudad de México</option>
+                          <option value="ciudad2">Guerrero</option>
+                          <option value="ciudad3">Puebla</option>
+                      </select>
+                  </div>
+                  <div>
+                      <label htmlFor="fecha">Fecha y Hora:</label>
+                      <input type="datetime-local" id="fecha" name="fecha"></input>
+                  </div>
+              </form>
+              <button className="buscar-button">Buscar Viaje</button>
             </div>
-          </div>
-          <div class="formulario">
-            <form>
-                <div>
-                    <label htmlFor="origen">Origen:</label>
-                        <select id="origen" name="origen">
-                            <option value="ciudad1">Oaxaca</option>
-                            <option value="ciudad2">Puebla</option>
-                            <option value="ciudad3">Chiapas</option>
-                        </select>
-                </div>
-                <div>
-                    <label htmlFor="destino">Destino:</label>
-                        <select id="destino" name="destino">
-                            <option value="ciudad1">Ciudad de México</option>
-                            <option value="ciudad2">Guerrero</option>
-                            <option value="ciudad3">Puebla</option>
-                        </select>
-                </div>
-                <div>
-                    <label htmlFor="fecha">Fecha y Hora:</label>
-                    <input type="datetime-local" id="fecha" name="fecha"></input>
-                </div>
-            </form>
-            <button className="buscar-button">Buscar Viaje</button>
-          </div>
-          <div class="contenedor-img-buscar-viajes">
-            <div>
-                <img class="img-buscar-viajes" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaY8WVzmRiNUWeBpm9CzcPEG4pLSNTN7sSvMTV9809QwZyxp7PW6gDhfTH23s-bJ1GP6Y&usqp=CAU" alt="Viajes Recomendados" />
-                <p class="p-buscar-viajes">Viajes Recomendados</p>
-            </div>
-            <div>
-                <img class="img-buscar-viajes2" src="https://images.pexels.com/photos/10752181/pexels-photo-10752181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Viajes Recomendados" />
-                <p class="p-buscar-viajes"s>Adicionales</p>
+            <div className="contenedor-img-buscar-viajes">
+              <div>
+                  <img className="img-buscar-viajes" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaY8WVzmRiNUWeBpm9CzcPEG4pLSNTN7sSvMTV9809QwZyxp7PW6gDhfTH23s-bJ1GP6Y&usqp=CAU" alt="Viajes Recomendados" />
+                  <p className="p-buscar-viajes">Viajes Recomendados</p>
+              </div>
+              <div>
+                  <img className="img-buscar-viajes2" src="https://images.pexels.com/photos/10752181/pexels-photo-10752181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Viajes Recomendados" />
+                  <p className="p-buscar-viajes">Adicionales</p>
+              </div>
             </div>
           </div>
           <footer className="viajes-recomendados-footer">

@@ -12,14 +12,14 @@ body {
   padding: 20px;
 }
 
-.img-buscar-viajes2{
+.img-buscar-viajes2 {
   color: white;
   height: auto;
   width: 250px;
   padding: 20px;
 }
 
-.contenedor-img-buscar-viajes{
+.contenedor-img-buscar-viajes {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +31,7 @@ body {
   color: grey;
   text-decoration: underline;
 }
+
 .nav-list {
   list-style: none;
   padding: 0;
@@ -38,7 +39,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-right: 20px ;
+  margin-right: 20px;
 }
 
 .nav-list li {
@@ -58,7 +59,7 @@ body {
 
 .BuscarViaje {
   text-align: center;
-  background-color:rgb(232, 201, 161);
+  background-color: rgb(232, 201, 161);
   min-height: 100vh;
 }
 
@@ -70,7 +71,7 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
   align-items: center;
-  justify-content:end;
+  justify-content: end;
 }
 
 .acceder-button, .ingresar-button {
@@ -103,7 +104,7 @@ body {
   flex-wrap: wrap;
 }
 
-.viajes-recomendados-footer-icons{
+.viajes-recomendados-footer-icons {
   display: flex;
   gap: 20px;
   margin: 0;
@@ -138,14 +139,20 @@ body {
 }
 
 .img-viajes-recomendados-presentacion {
-  background-color: #333;
+  background-image: url('../../../public/bus2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 35cap;
   color: white;
-margin: 0;
+  margin: 0;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  position: relative;
+  top: 0;
 }
 
 .img-viajes-recomendados-presentacion h1 {
@@ -158,33 +165,8 @@ margin: 0;
   font-size: 1.2em;
 }
 
-form {
-  margin: 20px 0;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  padding: 50px 20px 30px 0px;
-
-}
-
-form label {
-  padding-left : 20px;
-  display: block;
-  font-size: 12px;
-}
-
-form input[type="select"],
-form input[type="select"],
-form input[type="datetime-local"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
 .buscar-button {
-  background-color:olivedrab;
+  background-color: olivedrab;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -197,6 +179,60 @@ form input[type="datetime-local"] {
   background-color: #165f1b;
 }
 
-.formulario{
-  background-color: #d19d61;
+.formulario {
+  background-color: #ba8a54;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.formulario form div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.formulario label {
+  margin-bottom: 5px;
+  font-size: small;
+}
+
+.formulario input,
+.formulario select {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+  border-color: #ff6f61;
+  outline: none;
+}
+
+.buscar-button {
+  background-color: olivedrab;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 50px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buscar-button:hover {
+  background-color: #165f1b;
 }
