@@ -7,6 +7,7 @@ import BuscarViaje from '../BuscarViaje/BuscarViaje';
 import WaitList from '../WaitList/WaitList';
 import Terminales from '../Terminales/Terminales';
 import Mensaje from '../Mensaje/Mensaje';
+import InformacionViaje from '../InformacionViaje/InformacionViaje'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/WaitList" element={<WaitList />} />
         <Route path="/Terminales" element={<Terminales />} />
         <Route path="/Mensaje" element={<Mensaje />} />
+        <Route path="/InformacionViaje" element={<InformacionViaje />} />
       </Routes>
     </Router>
   );

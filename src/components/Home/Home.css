@@ -1,5 +1,5 @@
 .img-viajes-recomendados {
-  background-image: url('../../../public/img-bus.jpeg');
+  background-image: url('../../../public/img-bus.jpeg') !important;
   background-size: cover;
   height: 30cap;
   color: aliceblue;

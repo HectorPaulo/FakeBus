@@ -1,7 +1,5 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: #f4f4f4;
 }
 
@@ -150,7 +148,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
   position: relative;
   top: 0;
 }
@@ -161,7 +158,6 @@ body {
 }
 
 .img-viajes-recomendados-presentacion p {
-  margin: 10px 0 0;
   font-size: 1.2em;
 }
 
@@ -181,8 +177,6 @@ body {
 
 .formulario {
   background-color: #ba8a54;
-  width: 100%;
-  margin: 0;
   padding: 20px;
   display: flex;
   flex-direction: column;

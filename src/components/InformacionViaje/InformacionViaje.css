@@ -1,0 +1,93 @@
+.img-informacion-viaje {
+    background-image: url('../../../public/angel.jpeg');
+    background-size: cover;
+    background-position: center;  
+    width: 50%;
+    height: 300px; /* Ajusta la altura según sea necesario */
+    object-fit: cover;
+}
+
+.contenedor-img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.promocion-box  {
+    background-color: darkseagreen;
+    font-size: 12px;
+    height: 20px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 5px 0 20px 0;
+    text-align: center;
+  }
+
+.precio {
+    font-size: 50px;
+    font-weight: bold;
+    color: black !important;
+  }
+
+.informacion-viaje {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.informacion-viaje h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.descripcion {
+    font-size: 15px;
+    color: grey;
+    margin: 10px 0;
+    text-align: start;
+  }
+
+.comprar-button {
+    width: 90%;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.fecha-hora{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: start;
+}
+
+.fecha-input {
+  width: 114%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.fecha-input:focus {
+  border-color: #000;
+  outline: none;
+}
