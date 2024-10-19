@@ -26,7 +26,7 @@
 
 .card-side-register::before {
     position: absolute;
-    content: 'Ingresar';
+    content: 'Acceder';
     left: -90px;
     top: 0;
     width: 100px;
@@ -37,7 +37,8 @@
 
 .card-side-register::after {
     position: absolute;
-    content: 'Acceder';
+    margin-left: 15px;
+    content: 'Ingresar';
     left: 50px;
     top: 0;
     width: 100px;
@@ -75,7 +76,7 @@
     width: 20px;
     border: 2px solid var(--main-color);
     border-radius: 5px;
-    left: 30px; /* Cambiado a 30px */
+    left: 2px; /* Cambiado a 2px */
     bottom: 2px;
     background-color: var(--bg-color);
     box-shadow: 0 3px 0 var(--main-color);
@@ -83,10 +84,14 @@
 }
 
 .toggle-register:checked + .slider-register {
-    background-color: var(--input-focus);
+    background-color: var(--bg-color-alt); /* Cambiado a var(--bg-color-alt) */
 }
 
-.toggle-register:checked + .slider-register:after {
+.toggle-register:checked + .slider-register:before {
+    transform: translateX(30px); /* Cambiado a 30px */
+}
+
+.toggle-register:checked + .slider-register:before {
     transform: translateX(30px);
 }
 
@@ -113,7 +118,7 @@
 }
 
 .toggle-register:checked ~ .flip-card__inner-register {
-    transform: rotateY(180deg);
+    transform: rotateY(0deg);
 }
 
 .toggle-register:checked ~ .flip-card__front-register {
