@@ -8,7 +8,7 @@ import WaitList from '../WaitList/WaitList';
 import Terminales from '../Terminales/Terminales';
 import Mensaje from '../Mensaje/Mensaje';
 import InformacionViaje from '../InformacionViaje/InformacionViaje'
-import HorariosPrecios from '../InformacionViaje/HorariosPrecios';
+import HorariosPrecios from '../HorariosPrecios/HorariosPrecios'
 
 function App() {
   return (

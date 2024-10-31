@@ -14,9 +14,11 @@ function Home() {
             <nav>
               <ul className="nav-list">
                 <li><Link to="/">Inicio</Link></li>
-                <li><Link to="/">Nosotros</Link></li>
-                <li><Link to="/">Viajes</Link></li>
-                <li><Link to="/">Contacto</Link></li>
+                <li><Link to="BuscarViaje">Buscar Viajes</Link></li>
+                <li><Link to="HorariosPrecios">Viajes</Link></li>
+                <li><Link to="Mensaje">Contacto</Link></li>
+                <li><Link to="Terminales">Terminales</Link></li>
+                <li><Link to="WaitList">Extras</Link></li>
                 <Link to="/signup"><button className="ingresar-button">Ingresar</button></Link>
                 <Link to="/login"><button className="acceder-button">Acceder</button></Link>
               </ul>
